@@ -57,7 +57,7 @@ func main() {
 	}
 
 	fmt.Println("STATUS:", match.Status)
-
+	fmt.Println("DURATION:", match.Score.Duration)
 	home := "-"
 	away := "-"
 
