@@ -20,6 +20,7 @@ type MatchResponse struct {
 	} `json:"awayTeam"`
 
 	Score struct {
+		Duration string `json:"duration"`
 		FullTime struct {
 			Home *int `json:"home"`
 			Away *int `json:"away"`
