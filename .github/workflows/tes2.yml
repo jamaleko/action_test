@@ -21,7 +21,7 @@ jobs:
       - name: Test Article
         run: |
           echo "=== ARTICLE ==="
-          curl -I -L https://inet.detik.com
+          curl -I -L https://inet.detik.com/consumer/d-8513789/vertu-alphafold-tawarkan-ponsel-layar-lipat-super-mewah
 
       - name: Show Exit Code
         run: |
