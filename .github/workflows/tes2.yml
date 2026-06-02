@@ -1,0 +1,28 @@
+name: Test Detik
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Test Homepage
+        run: |
+          echo "=== HOMEPAGE ==="
+          curl -I -L https://www.detik.com
+
+      - name: Test Robots
+        run: |
+          echo "=== ROBOTS ==="
+          curl -I -L https://www.detik.com/robots.txt
+
+      - name: Test Article
+        run: |
+          echo "=== ARTICLE ==="
+          curl -I -L https://inet.detik.com
+
+      - name: Show Exit Code
+        run: |
+          echo "Finished"
